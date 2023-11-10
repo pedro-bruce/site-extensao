@@ -201,44 +201,39 @@
         let currentSlide = 0;
         const slides = $('.slide');
         const slideCount = slides.length;
-        const autoSlideInterval = 5000; // Tempo em milissegundos (5 segundos)
+        const autoSlideInterval = 5000;
 
         function showSlide(slideIndex) {
-        slides.hide();
-        slides.eq(slideIndex).show();
-        
-        // Ocultar todas as legendas
-        $('figcaption').hide();
-        
-        // Mostrar a legenda da imagem atual
-        $('figcaption').eq(slideIndex).show();
+            slides.hide();
+            slides.eq(slideIndex).show();
+            
+            $('figcaption').hide();
+            
+            $('figcaption').eq(slideIndex).show();
         }
 
         function nextSlide() {
-        currentSlide = (currentSlide + 1) % slideCount;
-        showSlide(currentSlide);
+            currentSlide = (currentSlide + 1) % slideCount;
+            showSlide(currentSlide);
         }
 
         function prevSlide() {
-        currentSlide = (currentSlide - 1 + slideCount) % slideCount;
-        showSlide(currentSlide);
+            currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+            showSlide(currentSlide);
         }
 
-        // Iniciar carrossel automaticamente e adicionar um botão "Próximo"
         let autoSlideTimer = setInterval(nextSlide, autoSlideInterval);
 
-        // Botão "Anterior"
         $('.prev-button').click(function() {
-        clearInterval(autoSlideTimer); // Pára o carrossel automático
-        prevSlide();
-        autoSlideTimer = setInterval(nextSlide, autoSlideInterval); // Reinicia o carrossel automático
+            clearInterval(autoSlideTimer);
+            prevSlide();
+            autoSlideTimer = setInterval(nextSlide, autoSlideInterval);
         });
 
-        // Botão "Próximo"
         $('.next-button').click(function() {
-        clearInterval(autoSlideTimer); // Pára o carrossel automático
-        nextSlide();
-        autoSlideTimer = setInterval(nextSlide, autoSlideInterval); // Reinicia o carrossel automático
+            clearInterval(autoSlideTimer);
+            nextSlide();
+            autoSlideTimer = setInterval(nextSlide, autoSlideInterval);
         });
     });
     </script>
