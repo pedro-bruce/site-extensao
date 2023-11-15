@@ -99,10 +99,10 @@ header {
 }
 
 figcaption {
-    text-align: center; /* Centraliza o texto horizontalmente */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-    color: white; /* Cor do texto */
-    padding: 10px; /* Espaçamento interno */
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px; 
   }
 
 .slide {
@@ -118,9 +118,15 @@ figcaption {
     width: 560px;
 }
 
-.extensao {
-    margin: 60px;
+.extensao, .participar {
+    padding: 60px;
 }
+
+.importancia {
+    padding: 60px;
+    background-color: #009FE0;
+}
+
 
 .line {
     height: 1px;
@@ -138,12 +144,17 @@ figcaption {
 }
 
 .line-text {
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
+    padding: 20px;
 }
 
 .line-text span {
     display: inline-block;
+}
+
+.importancia span {
+    background-color: #009FE0;
 }
 
 .saiba-mais {
