@@ -463,6 +463,33 @@ figcaption {
 
 /* ================================ */
 
+/* ============ projetos ============ */
+.title {
+    padding-left: 100px;
+}
+
+.container-projetos, .container-projetos-blue{
+    padding: 30px 60px 30px;
+}
+
+.container-projetos-blue {
+    background-color: #009FE0;
+}
+
+.projs {
+    display: flex;
+}
+
+.proj-img {
+    float: left;
+}
+
+.proj-descr {
+    flex: 1;
+    width: 300px;
+    margin-left: 20px;
+}
+
 /* ============ footer ============ */
 
 footer {
