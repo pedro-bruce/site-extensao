@@ -33,7 +33,7 @@ a {
 }
   
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -489,6 +489,41 @@ figcaption {
     width: 300px;
     margin-left: 20px;
 }
+
+/* ================================ */
+
+/* ============ pagina de um projeto ============ */
+
+.proj-title {
+    text-align: center;
+}
+
+.hashtags {
+    background-color: #bbceff;
+    border-radius: 20px;
+    margin-inline: 200px;
+    margin-block: 20px;
+    padding: 10px 0 10px;
+    display: flex;
+}
+
+.hashtag-item {
+    flex: 1;
+    text-align: center;
+}
+
+.hashtag-item span {
+    background-color: #52aff5;
+    border-radius: 20px;
+    color: #0075ff;
+}
+
+.proj-text {
+    margin-inline: 100px;
+    margin-bottom: 20px;
+}
+
+/* =============================== */
 
 /* ============ footer ============ */
 
