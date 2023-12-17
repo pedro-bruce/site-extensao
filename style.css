@@ -286,11 +286,11 @@ figcaption {
 
 /* ============ extensão ============ */
 
-.extensao, .participar {
+.extensao, .participar , .comunidade-ext{
     padding: 60px;
 }
 
-.importancia {
+.importancia , .aluno-unesp {
     padding: 60px;
     background-color: #009FE0;
 }
@@ -314,15 +314,25 @@ figcaption {
 .line-text {
     text-align: justify;
     font-size: 20px;
-    padding: 20px;
+    padding: 20px 60px;
 }
 
 .line-text span {
     display: inline-block;
 }
 
-.importancia span {
+.importancia span, .aluno-unesp span {
     background-color: #009FE0;
+}
+
+.ext-content {
+    display: flex;
+}
+
+.ext-content img {
+    padding: 20px 60px;
+    height: 300px;
+    width: 100%;
 }
 
 /* ================================ */
@@ -522,6 +532,63 @@ figcaption {
     margin-inline: 100px;
     margin-bottom: 20px;
 }
+
+.proj-donation {
+    margin-inline: 200px;
+    display: flex;
+}
+
+.proj-donation-descr {
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.donation {
+    padding-top: 50px;
+}
+
+.donation h4 {
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.progress-bar{
+    --progress: 50;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    display: flex;
+}
+
+.progress-bar::before{
+    content: "";
+    border-radius: 5px;
+    width: calc(var(--progress) * 1%);
+    background-color: green;
+    transition: all 0.2s ease;
+}
+
+.donation-button {
+	all: unset;
+	display: block;
+	margin-left: auto;
+    margin-top: 20px;
+	border: 2px solid #fff;
+    background-color: #009FE0;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 10px;
+	font-weight: 600;
+	transition: all 0.5s;
+	cursor: pointer;
+	letter-spacing: 1.2px;
+    float: left;
+}
+.donation-button:hover {
+    color:#000;
+    background: #346786;
+}
+
 
 /* =============================== */
 
