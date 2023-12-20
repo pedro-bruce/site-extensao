@@ -770,7 +770,33 @@ figcaption {
     display: none;
 }
 
-/* =============================== */
+/* ================================ */
+
+/* ============ perfil ============ */
+
+.profile-container {
+    margin-inline: 100px;
+    margin-block: 50px;
+}
+
+.profile-container img {
+    height: 100px;
+}
+
+.profile-top {
+    text-align: center;
+}
+
+.profile-description {
+    font-size: 20px;
+}
+
+.profile-description h4 {
+    margin-bottom: 0px;
+}
+
+/* ================================ */
+
 
 /* ============ footer ============ */
 
