@@ -456,7 +456,7 @@ figcaption {
 	all: unset;
 	display: block;
 	margin-left: auto;
-	border: 2px solid #fff;
+	border: none;
     background-color: #346786;
 	padding: 10px 15px;
 	border-radius: 25px;
