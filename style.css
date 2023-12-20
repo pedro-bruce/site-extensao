@@ -498,6 +498,8 @@ figcaption {
     flex: 1;
     width: 300px;
     margin-left: 20px;
+    font-size: 20px;
+    text-align: justify;
 }
 
 /* ================================ */
@@ -531,6 +533,7 @@ figcaption {
 .proj-text {
     margin-inline: 100px;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .proj-donation {
@@ -605,6 +608,8 @@ figcaption {
 
 .donation-proj {
     flex: 1;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .donation-proj h4 {
