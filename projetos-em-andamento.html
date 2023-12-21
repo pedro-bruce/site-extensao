@@ -52,15 +52,22 @@
                </div>
             </nav>
         </header>
-         <div class="carousel">
-            <div class="slide">
-                <img src="images/rand-img1.png" alt="">
-                <figcaption>Lorem Ipsum Dolor Sit Amet</figcaption>
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="images/rand-img1.png" style="height: 400px;">
+                <div class="text">Lorem Ipsum Dolor Sit Amet</div>
             </div>
-            <div class="slide">
-                <img src="images/rand-img2.png" alt="">
-                <figcaption>Quo dignissimos eligendi et molestias corrupti</figcaption>
+            <div class="slides fade">
+                <img src="images/rand-img2.png" style="height: 400px;">
+                <div class="text">Lorem Ipsum Dolor Sit Amet</div>
             </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
         </div>
         <h1 class="title">Projetos Em Andamento</h1>
         <div class="container-projetos">
@@ -147,46 +154,5 @@
         </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        let currentSlide = 0;
-        const slides = $('.slide');
-        const slideCount = slides.length;
-        const autoSlideInterval = 5000;
-
-        function showSlide(slideIndex) {
-            slides.hide();
-            slides.eq(slideIndex).show();
-            
-            $('figcaption').hide();
-            
-            $('figcaption').eq(slideIndex).show();
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slideCount;
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slideCount) % slideCount;
-            showSlide(currentSlide);
-        }
-
-        let autoSlideTimer = setInterval(nextSlide, autoSlideInterval);
-
-        $('.prev-button').click(function() {
-            clearInterval(autoSlideTimer);
-            prevSlide();
-            autoSlideTimer = setInterval(nextSlide, autoSlideInterval);
-        });
-
-        $('.next-button').click(function() {
-            clearInterval(autoSlideTimer);
-            nextSlide();
-            autoSlideTimer = setInterval(nextSlide, autoSlideInterval);
-        });
-    });
-    </script>
     <script src="script.js"></script>
 </html>
