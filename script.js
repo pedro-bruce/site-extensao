@@ -87,3 +87,7 @@ function projConclExampleRedirect() {
 function donationRedirect() {
     window.location.href = "doacao.html"
 }
+
+function newsPageRedirect() {
+    window.location.href = "noticia.html"
+}
